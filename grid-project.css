@@ -150,3 +150,24 @@ hr {
 .flex__item-5 {
   flex-grow: 1;
 }
+
+
+.grid__item-2-1 {
+    grid-area: g2-1;
+}
+
+.grid__item-2-2 {
+    grid-area: g2-2;
+}
+
+.grid__item-2-3 {
+    grid-area: g2-3;
+}
+
+.grid__section-2 {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows:  ;
+    grid-template-areas:
+     /* Fill in the appropriate grid areas here. */ ;
+  }
