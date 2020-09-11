@@ -48,16 +48,15 @@ hr {
   grid-template-columns: 66.6% 33.3%
   /* Make the first column 2x wide as the second. */ ;
   grid-template-rows: auto;
-  grid-template-areas: 'header'
-                        'main'
-                        'sidebar'
-                        'other-news'
-                        'smarter-living'
-                        'features'
-                        'discovery'
-                        'most-popular'
-                        'news'
-                        'footer';
+  grid-template-areas:  'header          header'
+                        'main           sidebar'
+                        'other-news     other-news'
+                        'smarter-living smarter-living'
+                        'features       features'
+                        'discovery      discovery'
+                        'most-popular   most-popular'
+                        'news           news'
+                        'footer         footer';
 
 
 
@@ -71,44 +70,168 @@ hr {
 }
 
 .grid__section-1 {
-  grid-area: 1 / 1 / 2 / 3 ;
+  grid-area: header ;
 }
 
 .grid__section-2 {
-  grid-area: 2 / 1 / 3 / 2 ;
+  grid-area: main ;
 }
 
 .grid__section-3 {
-  grid-area: 2 / 2 / 3 / 3 ;
+  grid-area: sidebar ;
 }
 
 .grid__section-4 {
-  grid-area: 3 / 1 / 4 / 3 ;
+  grid-area: other-news ;
 }
 
 .grid__section-5 {
-  grid-area: 4 / 1 / 5 / 3 ;
+  grid-area: smarter-living ;
 }
 
 .grid__section-6 {
-  grid-area: 5 / 1 / 6 / 3 ;
+  grid-area: features ;
 }
 
 .grid__section-7 {
-  grid-area: 6 / 1 / 7 / 3 ;
+  grid-area: discovery ;
 }
 
 .grid__section-8 {
-  grid-area: 7 / 1 / 8 / 3 ;
+  grid-area: most-popular ;
 }
 
 .grid__section-9 {
-  grid-area: 8 / 1 / 9 / 3 ;
+  grid-area: news ;
 }
 
 .grid__section-10 {
-  grid-area: 9 / 1 / 10 / 3;
+  grid-area: footer ;
 }
+
+.grid__section-2 {
+    display:  grid ;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 480px 200px 150px 350px 480px 200px 200px ;
+    grid-template-areas: 'g2-1 g2-1 g2-1 g2-1 g2-1'
+                         'g2-2 g2-2 g2-3 g2-3 g2-3'
+                         'g2-4 g2-4 g2-4 g2-4 g2-4'
+                         'g2-5 g2-5 g2-5 g2-5 g2-5'
+                         'g2-6 g2-6 g2-6 g2-6 g2-6'
+                         'g2-7 g2-7 g2-7 g2-8 g2-8'
+                         'g2-9 g2-9 g2-9 g2-9 g2-9';
+
+    background-color: gray;
+  }
+
+.grid__item-2-1 {
+    grid-area: g2-1;
+    height: 480px;
+    border: 1px solid #333333;
+}
+
+.grid__item-2-2 {
+    grid-area: g2-2;
+    height: 200px;
+    border: 1px solid #333333;
+}
+
+.grid__item-2-3 {
+    grid-area: g2-3;
+    height: 200px;
+    border: 1px solid #333333;
+}
+.grid__item-2-4 {
+    grid-area: g2-4;
+    height: 150px;
+    border: 1px solid #333333;
+}
+
+.grid__item-2-5 {
+    grid-area: g2-5;
+    height: 350px;
+    border: 1px solid #333333;
+}
+
+.grid__item-2-6 {
+    grid-area: g2-6;
+    height: 480px;
+    border: 1px solid #333333;
+}
+
+.grid__item-2-7 {
+    grid-area: g2-7;
+    height: 200px;
+    border: 1px solid #333333;
+}
+
+.grid__item-2-8 {
+    grid-area: g2-8;
+    height: 200px;
+    border: 1px solid #333333;
+}
+
+.grid__item-2-9 {
+    grid-area: g2-9;
+    height: 200px;
+    border: 1px solid #333333;
+}
+
+
+.grid__section-3 {
+    display:  grid ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 290px 760px 330px 240px 240px;
+    grid-template-areas: 'g3-1 g3-1'
+                         'g3-2 g3-2'
+                         'g3-3 g3-4'
+                         'g3-5 g3-5'
+                         'g3-6 g3-6'
+                         'g3-7 g3-7';
+    background-color: gray;
+}
+
+.grid__item-3-1 {
+    grid-area: g3-1;
+    height: 200px;
+    border: 1px solid #333333;
+}
+
+.grid__item-3-2 {
+    grid-area: g3-2;
+    height: 290px;
+    border: 1px solid #333333;
+}
+
+.grid__item-3-3 {
+    grid-area: g3-3;
+    height: 760px;
+    border: 1px solid #333333;
+}
+.grid__item-3-4 {
+    grid-area: g3-4;
+    height: 760px;
+    border: 1px solid #333333;
+}
+
+.grid__item-3-5 {
+    grid-area: g3-5;
+    height: 330px;
+    border: 1px solid #333333;
+}
+
+.grid__item-3-6 {
+    grid-area: g3-6;
+    height: 240px;
+    border: 1px solid #333333;
+}
+
+.grid__item-3-7 {
+    grid-area: g3-7;
+    height: 240px;
+    border: 1px solid #333333;
+}
+
 
 
 @media (min-width:1024px) {
@@ -153,15 +276,15 @@ hr {
 
 
 .grid__item-2-1 {
-    grid-area: g2-1;
+    grid-area: ;
 }
 
 .grid__item-2-2 {
-    grid-area: g2-2;
+    grid-area: ;
 }
 
 .grid__item-2-3 {
-    grid-area: g2-3;
+    grid-area: ;
 }
 
 .grid__section-2 {
@@ -171,4 +294,3 @@ hr {
     grid-template-areas:
      /* Fill in the appropriate grid areas here. */ ;
   }
-hey{}
